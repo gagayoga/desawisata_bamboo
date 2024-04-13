@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:elevation="2dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logodesa"
+                android:contentDescription="@string/deskripsi"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/usernameText"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/logoutButton"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:src="@drawable/logout"
+            android:layout_height="35dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Temukan tempat wisata favoritmu!"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingEnd="50dp"
+        android:lineHeight="35sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Atraksi untuk dijelajahi"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="See all"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- RecyclerView untuk menampilkan daftar produk -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rekomendasi tempat"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="See all"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- ListView untuk menampilkan produk -->
+    <ListView
+        android:id="@+id/listViewProducts"
+        android:layout_marginTop="15dp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

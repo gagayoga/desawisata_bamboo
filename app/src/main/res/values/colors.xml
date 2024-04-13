@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ireng">#121213</color>
+    <color name="putih">#FFFFFFFF</color>
+    <color name="error">#FF0000</color>
+
+
+    <color name="bg_splash">#030209</color>
+    <color name="bg_warna">#4285F4</color>
+    <color name="bg_login">#000000</color>
+
+</resources>
+

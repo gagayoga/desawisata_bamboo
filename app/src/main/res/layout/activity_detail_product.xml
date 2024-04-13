@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailProduct">
+
+    <FrameLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!-- Gambar -->
+        <ImageView
+            android:id="@+id/gambar_item"
+            android:src="@drawable/detail1"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <!-- Icon back -->
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Container untuk icon share dan bookmark -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp">
+
+            <!-- Icon share -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/baseline_share_24"
+                android:layout_marginEnd="5dp"/>
+
+            <!-- Icon bookmark -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/baseline_bookmark_24"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical"
+        android:paddingVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/judul_item"
+            android:text="Deskripsi"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppins_bold"
+            android:maxLines="2"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/deskripsi_item"
+            android:text="sbhbuebhebhbebjdbjbcuibduibcdceeece"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="7"
+            android:textAlignment="gravity"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fasilitas_item"
+                android:text="Fasilitas"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_bold"
+                android:maxLines="2"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fasilitas_1"
+                android:layout_marginTop="10dp"
+                android:text="•Kamar Mandi Umum"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fasilitas_2"
+                android:layout_marginTop="3dp"
+                android:text="•Kesenian dan Budaya"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fasilitas_3"
+                android:layout_marginTop="3dp"
+                android:text="•Musholla"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fasilitas_4"
+                android:layout_marginTop="3dp"
+                android:text="•Rumah Makan"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/harga"
+                android:text="Harga"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_bold"
+                android:maxLines="2"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/harga_item"
+                android:layout_marginTop="10dp"
+                android:text="•Kamar Mandi Umum"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_extrabold"
+                android:maxLines="1"
+                android:textColor="@color/bg_warna"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:icon="@drawable/baseline_call_24"
+            android:text="Selengkapnya Hub :  +6285726643029"
+            android:fontFamily="@font/poppins_semibold"
+            android:backgroundTint="@color/bg_warna"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_warna"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>
