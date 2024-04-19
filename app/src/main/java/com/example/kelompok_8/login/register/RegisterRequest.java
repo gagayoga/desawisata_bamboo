@@ -2,7 +2,7 @@ package com.example.kelompok_8.login.register;
 
 import com.google.gson.annotations.SerializedName;
 public class RegisterRequest {
-    @SerializedName("name")
+    @SerializedName("username")
     private String name;
 
     @SerializedName("email")

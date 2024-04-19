@@ -50,14 +50,14 @@ public class RegisterResponse {
         @SerializedName("email")
         private String email;
 
-        @SerializedName("name")
-        private String name;
+        @SerializedName("username")
+        private String username;
 
         // Buat constructor, getter, dan setter sesuai kebutuhan
-        public UserData(int id, String email, String name) {
+        public UserData(int id, String email, String username) {
             this.id = id;
             this.email = email;
-            this.name = name;
+            this.username = username;
         }
 
         public int getId() {
@@ -76,12 +76,12 @@ public class RegisterResponse {
             this.email = email;
         }
 
-        public String getName() {
-            return name;
+        public String getUsername() {
+            return username;
         }
 
-        public void setName(String name) {
-            this.name = name;
+        public void setUsername(String username) {
+            this.username = username;
         }
     }
 }
